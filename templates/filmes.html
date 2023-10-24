@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<h2>Lista de Filmes</h2>
+<ul id="filmes-list">
+    {% for filme in filmes %}
+    <li>{{ filme.titulo }} ({{ filme.ano }})</li>
+    {% endfor %}
+</ul>
+
+<!-- Inclua a linha que chama o arquivo JavaScript main.js -->
+<script src="main.js"></script>
+
+{% endblock %}
